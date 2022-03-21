@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=PT+Sans:wght@400;700&display=swap');:root {
+    --black: #181818;
+    --white: #ffffff;
+    --gray: #eeeeee;
+    --gray-light: #fbfbfb;
+    --font-body: 'PT Sans', sans-serif;
+    --font-title: 'Libre Baskerville', serif;
+}
+body{
+    margin:0;
+    height: 100vh;
+    width: auto;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+    background-color: var(--gray-light)!important;
+    padding: 30px 25px 20px 25px;
+}
+
+nav li a{
+    color: var(--black)!important;
+    font-size: 1.8rem;
+}
+nav li a::after{
+    display:none;
+}
+.nav-item ul li a{
+    font-size: 1rem;
+}
+
+li{
+    list-style: none;
+}
+.container{
+    background-color: var(--gray-light);
+    width: 100%;
+
+}
+section picture img, section img{
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+header img{
+    width: 70%;
+    align-self: center!important;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+}
+
+nav a, button a{
+    color: var(--black);
+    text-decoration: none;
+}
+header h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+header h3{
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+.pc{
+    display: none;
+}
+section p{
+    margin-top: 3px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+button{
+    padding: 10px;
+    width: 100%;
+    box-shadow: none;
+    border: 1px solid var(--black);
+    background-color: var(--gray-light);
+    border-radius: 3px!important;
+}
+.request{
+    margin-top: 50px;
+    background-color: var(--gray);
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+.request img{
+    margin-bottom: 60px;
+}
+.request h2{
+    font-family: 'Libre Baskerville', serif;
+}
+.btn-request{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--black);
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-radius: 3px;
+}
+.btn-request a{
+    text-decoration: none;
+    color: var(--white);
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+footer .icon-footer a{
+    color: var(--black);
+    font-size: 1.2rem;
+
+
+}
+footer .icon-footer{
+    border: 1px solid var(--gray);
+    margin: 0 auto;
+    padding: 7px 33px;
+}
+.nav-link{
+    display: none;
+}
+
+
+@media screen and (min-width:1200px){
+    body{
+        padding: 20px 100px 20px 100px!important;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    nav ul li a{
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    header img{
+        margin-top:180px;
+        width: 30%;
+        margin-bottom: 120px;
+    }
+
+    header h1{
+        font-size: 3.5rem;
+    }
+    header h3{
+        font-size: 1.3rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .pc{
+        display: block;
+    }
+    .img-project1, .img-project2{
+        position: relative;
+    }
+    .img-project1{
+        margin-bottom: 80px;
+    }
+    .img-project2{
+        margin-bottom: 120px;
+    }
+    .text{
+        position: absolute;
+        width: 400px;
+        margin-left: 30px;
+        margin-top: -110px;
+        z-index: 2;
+    }
+    .text p{
+        font-size: 1.1rem;
+    }
+    button{
+        display: none;
+    }
+    .request{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 80px;
+        padding-bottom: 25px;
+    }
+    .request h2{
+        font-size: 3.5rem;
+    }
+    .request h2:first-child{
+        margin-top: 80px;
+    }
+    .request img{
+        width:500px;
+        height: auto;
+    }
+    .btn-request{
+        width: 300px;
+        font-weight: 600;
+    }
+    footer{
+        display: flex;
+        justify-content: flex-end;
+    }
+    footer .icon-footer{
+        border:none;
+        margin: 0;
+        padding: 7px 15px;
+    }
+    footer .icon-footer a{
+        font-size: 2rem;
+    }
+}
